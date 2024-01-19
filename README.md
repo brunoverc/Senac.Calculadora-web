@@ -1,4 +1,4 @@
-# README do Projeto Calculadora
+# Projeto Calculadora - SENAC
 
 ## HTML + CSS
 
