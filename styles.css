@@ -1,7 +1,11 @@
 body {
     background-color: black;
     color: white;
-    font-family: 'Arial', sans-serif;
+}
+
+.one-nine {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .calculator {
@@ -9,8 +13,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80vw;
-    margin: auto;
+    width: 100vw;
+    height: 100vh;
 }
 
 .title {
@@ -19,12 +23,23 @@ body {
 }
 
 .input-div {
-    width: 100%;
-    padding: 1rem;
+    grid-column: span 4;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
     border: 2px solid gray;
     font-size: larger;
-    text-align: right;
-    margin-bottom: 1rem;
+    height: 5rem;
+}
+
+.input {
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .buttons {
@@ -33,7 +48,9 @@ body {
     gap: 0.5rem;
 }
 
-.num-btn, .num-btn-signal, .num-btn-equal {
+.num-btn,
+.num-btn-signal,
+.num-btn-equal {
     padding: 1.5rem;
     border: none;
     font-size: larger;
@@ -52,7 +69,10 @@ body {
 }
 
 @media only screen and (max-width:800px) {
-    .num-btn, .num-btn-signal, .num-btn-equal {
+
+    .num-btn,
+    .num-btn-signal,
+    .num-btn-equal {
         padding: 1rem;
         font-size: medium;
     }
