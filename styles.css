@@ -1,78 +1,59 @@
 body {
-    background-color: #282c34;
-    color: #ffffff;
+    background-color: black;
+    color: white;
     font-family: 'Arial', sans-serif;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
 }
 
 .calculator {
-    width: 350px;
-    background-color: #2e3641;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    margin: auto;
 }
 
 .title {
     font-size: 2rem;
-    margin-bottom: 20px;
-    text-align: center;
+    margin-bottom: 1rem;
 }
 
 .input-div {
-    width: 90%;
-    padding: 15px;
-    border: 2px solid #4a5362;
-    font-size: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid gray;
+    font-size: larger;
     text-align: right;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    background-color: #3b4252;
+    margin-bottom: 1rem;
 }
 
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 0.5rem;
 }
 
 .num-btn, .num-btn-signal, .num-btn-equal {
-    padding: 15px;
+    padding: 1.5rem;
     border: none;
-    font-size: 1.5rem;
-    border: 1px solid #4a5362;
-    background-color: #2e3641;
-    color: #ffffff;
+    font-size: larger;
+    border: 1px solid gray;
+    background-color: rgb(11, 9, 135);
+    color: white;
     cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
 
-
 .num-btn:hover {
-    background-color: #4c566a;
+    background-color: maroon;
 }
 
 .num-btn-equal {
-    background-color: #5e81ac;
-}
-
-.result {
-    margin-top: 20px;
+    background-color: rgb(5, 68, 17);
 }
 
 @media only screen and (max-width:800px) {
-    .calculator {
-        width: 100%;
-        border-radius: 0;
-    }
-
     .num-btn, .num-btn-signal, .num-btn-equal {
-        padding: 12px;
-        font-size: 1.2rem;
+        padding: 1rem;
+        font-size: medium;
     }
 }
